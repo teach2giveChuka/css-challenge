@@ -132,7 +132,7 @@ ion-icon{
 
 
 .class202{
-    background-color: rgb(244, 244, 134);
+    background-color: rgb(255, 255, 255);
     justify-content: center;
     align-items: center;
     display: flex;
@@ -185,13 +185,14 @@ ion-icon{
 
 }
 .class303{
+    background-color: #FAFAFA;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 .class303m{
-    background-color: pink;
+    /* background-color: pink; */
     width: 70vw;
 }
 .class303 .pp{
@@ -313,4 +314,68 @@ grid-area: str;
 }
 .pricing{
     text-align: center;
+    margin-bottom: 50px;
+}
+.grid6{
+    margin-top: 10%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: 'fr st pr';
+    text-align: center;
+    background-color: wheat;
+    box-sizing: border-box;
+    padding: 30px;
+}
+.free{
+    grid-area: fr;
+
+}
+.standard{
+    grid-area: st;
+}
+.premium{
+    grid-area: pr;
+}
+
+.grid-dollar{
+    display: grid;   
+    grid-template-columns:repeat(2, 1fr) ;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas: 
+    'va dol'
+    'va pm';
+    font-weight: 600;
+    
+    /* text-align: center; */
+    /* align-items: center; */
+    width: 100px;
+    height: 30px;
+    font-size: 10px;
+    background-color: #F3CD02;
+    margin-left: 120px;
+
+}
+
+.val{
+    grid-area: va;
+    font-size: 30px;
+    /* background-color: red; */
+    text-align: end;
+}
+.dollar{
+    grid-area: dol;
+    text-align: start;
+    /* width: 1px; */
+}
+.month{
+    grid-area: pm;
+    /* font-size: 3px; */
+}
+.checks p ion-icon{
+    font-size: 30px;
+    color: #2DC071;
+}
+.checks p{
+    font-size: 25;
+
 }
