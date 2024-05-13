@@ -3,9 +3,14 @@
 *{
     padding: 0;
     margin: 0;
-}
-.body{
     font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+}
+
+.body{
+    /* font-family: 'Montserrat', sans-serif; */
+    /* font-size: 19px; */
+    /* background-color: ; */
 } 
 
 .class101{
@@ -13,7 +18,7 @@
     flex-direction: column;
     align-items: center;
     height: 100vh;
-    background-image: url("./images/hero.png");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./images/hero.png");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -27,7 +32,7 @@
     }
 
 .top{
-    margin-top: 10px;
+    margin-top: 15px;
     display: flex;
     /* background-color: aqua; */
     justify-content: space-between;
@@ -35,7 +40,7 @@
 }
 nav ul{
     list-style-type: none;
-    margin-left: -80%;
+    /* margin-left: -80%; */
 }
 nav ul li{
     display: inline-block;   
@@ -48,6 +53,11 @@ nav ul li a{
 
 .brand{
     font-size: 25px;
+    /* margin-right:0px; */
+}
+.brandnav{
+    display: flex;
+    justify-content: space-between;
 }
 .content-t{
     /* background-color: yellow; */
@@ -225,8 +235,9 @@ ion-icon{
     grid-area: p3;
 }
 .p1 img, .p2 img, .p3 img{
-    height: 100px;
-    width: 100px;
+    height: 180px;
+    width: 180px;
+    margin-bottom: 40px;
 }
 .p1, .p2, .p3{
     text-align: center;
@@ -239,10 +250,13 @@ ion-icon{
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    gap: 5px;
 }
 .stars ion-icon{
-    height: 20px;
-    width: 15px;
+    height: 30px;
+    width: 20px;
     color: #F3CD02;
 }
 .grid4{
@@ -278,7 +292,9 @@ grid-area: str;
     display: grid;
     grid-template-columns: repeat(2, ifr);
     grid-template-areas: 'su su-b';
-    background-color: purple;
+    background: linear-gradient(to right,#034688, #5C3188, #D21589);
+
+
     padding: 35px;
     margin-bottom: 10%;
     
@@ -369,7 +385,7 @@ grid-area: str;
     grid-template-rows: repeat(2, 1fr);
     grid-template-areas: 
     'va dol'
-    'va pm';
+    ' pm';
     font-weight: 600;
     
     /* text-align: center; */
@@ -383,7 +399,7 @@ grid-area: str;
 
 }
 
-.val{
+.val p{
     grid-area: va;
     font-size: 30px;
     /* background-color: red; */
@@ -467,7 +483,9 @@ grid-area: str;
 
 .grid8 .fam img{
     width: 200px;
-    height: 482px;
+    height: 530px;
+    box-shadow: 1px 1px 7px grey;
+
 }
 
 .form h3{
@@ -489,6 +507,8 @@ grid-area: str;
     color: black;
     background-color: white;
     width: 500px;
+    box-shadow: 1px 1px 7px grey;
+
 }
 .form button{
     width: 80%;
@@ -511,6 +531,7 @@ grid-area: str;
     display: flex;
     justify-content: space-between;
     margin-bottom: 10px;
+    /* background-color: #129FEF; */
 }
 .contact .pm{
     font-size: 25px;   
@@ -525,13 +546,17 @@ grid-area: str;
 .class505{
     color: black;
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
+    /* background-color: #2DC071; */
+    
+    /* grid-template-columns: repeat(5, 1fr);
     grid-template-areas: 
-    'com are fea res int';
+    'com are fea res int'; */
     
 }
 
 .grid9{
+    /* background-color: antiquewhite; */
+    margin-top: 40px;
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     grid-template-areas: 
@@ -540,9 +565,14 @@ grid-area: str;
 
 .company{
     grid-area: com;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: space-around;
+    
 }
 .legal{
-    grid-area: are;
+    /* grid-area: are; */
 }
 .features{
     grid-area: fea;
@@ -553,4 +583,40 @@ grid-area: str;
 .intouch{
     grid-area: int;
 
+}
+
+.cbottom{
+    margin-top: 500px;
+    background-color: #FAFAFA;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+.bottomc{
+    /* background-color: red; */
+    width: 70vw;
+}
+.company, .legal, .features, .resources, .intouch{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: space-around;
+}
+
+.intouch ion-icon{
+    font-size: 30px;
+}
+.love{
+    padding-top: 20px;
+    margin: 50px 0px;
+    display: flex;
+   justify-content: space-between;
+    /* background-color: whitesmoke; */
+    font-size: 15px;
+}
+.love ion-icon{
+    font-size: 30px;
+    margin-right: 10px;
 }
