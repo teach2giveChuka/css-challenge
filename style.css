@@ -378,6 +378,14 @@ grid-area: str;
     border-radius: 10px;
     padding-bottom: 22px;
 }
+.dollar{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 0%;
+    padding: 0;
+}
 
 .grid-dollar{
     display: grid;   
@@ -385,35 +393,34 @@ grid-area: str;
     grid-template-rows: repeat(2, 1fr);
     grid-template-areas: 
     'va dol'
-    ' pm';
-    font-weight: 600;
-    
-    /* text-align: center; */
-    /* align-items: center; */
-    width: 100px;
-    height: 30px;
+    'va pm';
+    font-weight: 600;    
     font-size: 10px;
-    /* background-color: #F3CD02; */
-    margin-left: 120px;
     color: #23A6F0;
-
 }
 
 .val p{
     grid-area: va;
     font-size: 30px;
-    /* background-color: red; */
     text-align: end;
 }
-.dollar{
+.dollars{
+    display: flex;
+    flex-direction: row;
     grid-area: dol;
     text-align: start;
-    /* width: 1px; */
+    margin-left: 0;
+    height: 20px;
 }
-.month{
+.pm{
+    margin-top: -20px;
     grid-area: pm;
-    width: 30px;
-    /* font-size: 3px; */
+    width: 100px;
+    /* background-color: #F3CD02; */
+    font-size: 13px;
+}
+.month p{
+    font-size: 5px;
 }
 .checks p ion-icon{
     font-size: 30px;
@@ -533,7 +540,7 @@ grid-area: str;
     margin-bottom: 10px;
     /* background-color: #129FEF; */
 }
-.contact .pm{
+.contact .bm{
     font-size: 25px;   
 }
 .contact button{
@@ -561,6 +568,10 @@ grid-area: str;
     grid-template-columns: repeat(5, 1fr);
     grid-template-areas: 
     'com are fea res int';
+}
+.phone, .location, .mail{
+    display: flex;
+    align-items: center;
 }
 
 .company{
