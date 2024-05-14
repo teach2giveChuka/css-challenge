@@ -10,7 +10,7 @@
 - [Author](#author)
 
 ## Overview
-Th challenge.
+A CSS Weekend Challenge
 
 ### Screenshot
 
@@ -21,7 +21,7 @@ Th challenge.
 
 ### Links
 
-- Solution URL: [News-HomePage-Main](https://github.com/teach2giveChuka/css-challenge)
+- Solution URL: [CSS-Challenge](https://github.com/teach2giveChuka/css-challenge)
 - Live Site URL: [Live page](https://teach2givechuka.github.io/css-challenge/)
 
 ## My process
