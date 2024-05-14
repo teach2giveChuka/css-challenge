@@ -26,21 +26,17 @@
     width: 100%;
 }
 .class101m{
-    /* display: flex; */
-    /* flex-direction: column; */
     width: 70vw;
     }
 
 .top{
     margin-top: 15px;
     display: flex;
-    /* background-color: aqua; */
     justify-content: space-between;
     color: white;
 }
 nav ul{
     list-style-type: none;
-    /* margin-left: -80%; */
 }
 nav ul li{
     display: inline-block;   
@@ -164,8 +160,7 @@ ion-icon{
 
 
 .peace2{
-    grid-area: p2;
-   
+    grid-area: p2;   
 
 }
 .set2{
@@ -183,7 +178,6 @@ ion-icon{
     padding: 20px 40px;
     height: 200px;
     text-align: center;
-    /* background-color: white; */
      margin: 50px 0px;
 }
 .peace2 .pp, .set2 .pp, .satisfaction2 .pp{
@@ -288,16 +282,22 @@ grid-area: str;
 .hooli img, .lyft img, .hat img, .stripe img, .aws img, .reddit img{
     width: 70px;
 }
+.hooli, .lyft, .hat, .stripe, .aws, .reddit{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 .grid5{
     display: grid;
     grid-template-columns: repeat(2, ifr);
     grid-template-areas: 'su su-b';
     background: linear-gradient(to right,#034688, #5C3188, #D21589);
-
-
     padding: 35px;
     margin-bottom: 10%;
     
+}
+.grid5 p{
+    font-size: 25px;
 }
 .sub{
     grid-area: su;
@@ -328,7 +328,7 @@ grid-area: str;
     border-radius: 10px;
     padding: 10px 20px;
     font-size: 17px;
-    ;
+    
 }
 .pricing{
     text-align: center;
@@ -582,9 +582,7 @@ grid-area: str;
     justify-content: space-around;
     
 }
-.legal{
-    /* grid-area: are; */
-}
+
 .features{
     grid-area: fea;
 }
@@ -630,4 +628,125 @@ grid-area: str;
 .love ion-icon{
     font-size: 30px;
     margin-right: 10px;
+}
+
+
+@media screen and (max-width: 1177px) {
+    .grid1{
+        /* background-color: red; */
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        /* margin-bottom: 500px; */
+    }
+    .space{
+        /* background-color: #FAFAFA; */
+        height: 700px;
+    }
+    
+}
+@media screen and (max-width: 1024px) {
+    
+    .grid2{
+        /* background-color: red; */
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;      
+    }
+    
+}
+@media screen and (max-width:1114px){
+    /* Scrrensize for menu humbuger */
+
+}
+
+@media screen and (max-width: 1149px){
+    .grid6{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap :20px;
+        
+    }
+
+}
+@media screen and (max-width: 1077px){
+    .grid5 p{
+        font-size: 15px;
+
+    }
+
+    
+}
+@media screen and (max-width: 990px){
+    .grid2{box-sizing: border-box;
+        margin-top: 30px;
+    }
+
+}
+@media screen and (max-width: 992px){
+    .grid2{
+        margin-top: 80px;
+    }
+
+}
+
+@media screen and (max-width: 904px){ 
+
+.grid3{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    margin-bottom: 30px;
+
+}    
+}
+@media screen and (max-width: 817px){
+    .grid4{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+   
+    .sub{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 27px;
+        /* gap: ; */
+    }
+    .sub-b button{
+       
+        border-radius: 10px;
+        padding: 10px 10px;
+        background-color: #23A6F0;
+        color: white;
+        /* font-size: 16px; */
+    }
+    .sub-b{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 10px;
+        background-color: transparent;
+        width: 90%;
+        border-radius: 10px;
+    }
+    .sub-b input{
+        width: 80%;
+        padding: 5px 10px;
+        font-size: 16px;
+        
+    }
+   
+}
+
+@media screen and (max-width: 707px){
+    
 }
